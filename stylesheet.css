@@ -1,0 +1,203 @@
+/* Global Styles */
+
+body {
+  background-color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 5em;
+  font-family: 'Playfair Display', serif;
+}
+
+h2 {
+  font-size: 4em;
+  font-family: 'Playfair Display', serif;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-variant: small-caps;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+}
+
+@media screen and (max-width: 576px) {
+        .card {
+    margin-bottom: 15px;
+    }
+}
+
+.row {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Navbar */
+
+.navbar-dark {
+  background-color: #333;
+}
+
+.searchButton {
+  cursor: pointer;
+}
+
+/* Landing */
+
+.landing {
+  height: 100vh;
+  background-image:url(images/bedcat.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.landing::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.50);
+  z-index:-1;
+}
+
+.landingtext {
+  z-index: 2000;
+  color: #cfa707;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  display: inline;
+}
+
+/* About Us */
+
+.about {
+  height: 100vh;
+  background-color: #eeeeee;
+}
+
+.abouttext {
+    color: #cfa707;
+    position: relative;
+    height: 100vh;
+    display: inline;
+}
+
+.selfie {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  border-color: #cfa707;
+  border-width: 3px;
+  border-style: solid;
+  background-size: contain;
+}
+
+.selfie1 {
+  background-image: url('images/matthew.jpg');
+}
+
+.selfie2 {
+  background-image: url('images/nettie.jpg');
+}
+
+/*Services*/
+
+.services {
+  height: 100vh;
+  background-color: #dddddd;
+}
+
+.servicestext {
+  color: #cfa707;
+  position: relative;
+  height: 100vh;
+  display: inline;
+}
+
+.services li {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+}
+/*Pricing*/
+
+.pricing {
+  height: 100vh;
+  background-color: #eeeeee;
+}
+
+.pricingtext {
+  color: #cfa707;
+  position: relative;
+  height: 100vh;
+  display: inline;
+}
+
+.pricing li {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+}
+
+/*Why GCC*/
+
+.whygcc {
+  height: 100vh;
+  background-color: #dddddd;
+}
+
+.whygcctext {
+  color: #cfa707;
+  position: relative;
+  height: 100vh;
+  display: inline;
+}
+
+/*Contact*/
+
+.contact {
+  height: 100vh;
+  background-color: #eeeeee;
+}
+
+.contacttext {
+  color: #cfa707;
+  position: relative;
+  height: 100vh;
+  display: inline;
+}
+
+.nametext, .emailtext, .textbox {
+  font-family: 'Raleway', sans-serif;
+}
+
+.textbox {
+  height: 20vh;
+}
+
+.submit {
+  font-variant: small-caps;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.contactCard h4 {
+  padding: 5px;
+}
+
+/*Footer*/
+
+footer {
+  background-color: #333;
+  color: #eeeeee;
+}
