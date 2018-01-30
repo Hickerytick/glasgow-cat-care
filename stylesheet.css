@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 4em;
   font-family: 'Playfair Display', serif;
 }
 
@@ -26,11 +26,11 @@ p {
   color: #333;
 }
 
-@media screen and (max-width: 576px) {
-        .card {
-    margin-bottom: 15px;
-    }
+
+.card {
+  margin-bottom: 15px;
 }
+
 
 .row {
   padding-left: 10px;
@@ -83,15 +83,16 @@ p {
 /* About Us */
 
 .about {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #eeeeee;
 }
 
 .abouttext {
-    color: #cfa707;
-    position: relative;
-    height: 100vh;
-    display: inline;
+  color: #cfa707;
+  position: relative;
+  display: inline;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .selfie {
@@ -108,22 +109,23 @@ p {
   background-image: url('images/matthew.jpg');
 }
 
-.selfie2 {
-  background-image: url('images/nettie.jpg');
-}
+/* .selfie2 {
+  width: 20%;
+  height: 20%;
+} */
 
 /*Services*/
 
 .services {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #dddddd;
 }
 
 .servicestext {
   color: #cfa707;
-  position: relative;
-  height: 100vh;
-  display: inline;
+
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .services li {
@@ -133,15 +135,16 @@ p {
 /*Pricing*/
 
 .pricing {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #eeeeee;
 }
 
 .pricingtext {
   color: #cfa707;
   position: relative;
-  height: 100vh;
   display: inline;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .pricing li {
@@ -149,32 +152,55 @@ p {
   color: #333;
 }
 
+#totalCost {
+  color: #333;
+  font-size: 3em;
+}
+
 /*Why GCC*/
 
 .whygcc {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #dddddd;
 }
 
 .whygcctext {
   color: #cfa707;
   position: relative;
-  height: 100vh;
   display: inline;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 /*Contact*/
 
 .contact {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #eeeeee;
+  position: relative;
+  z-index: 1;
 }
+
+.after:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 2
+}
+
 
 .contacttext {
   color: #cfa707;
   position: relative;
-  height: 100vh;
   display: inline;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .nametext, .emailtext, .textbox {
@@ -199,5 +225,49 @@ p {
 
 footer {
   background-color: #333;
-  color: #eeeeee;
+  color: white;
+  border-top: 3px solid #cfa707;
+}
+
+.footerText {
+
+}
+
+#footerLeft {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0;
+}
+
+#footerRight {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+/* Form */
+
+.success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
 }
