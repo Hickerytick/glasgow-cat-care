@@ -1,6 +1,6 @@
 # Glasgow Cat Care :smiley_cat:
 
-A ranadom quote generator, get inspired or have a chuckle.
+A small business website, features a calculator and PHP contact form.
 
 ## Built With
 
